@@ -1,0 +1,25 @@
+{
+  "name": "vue-socket.io-chat",
+  "version": "0.0.0",
+  "description": "A simple chat client using socket.io",
+  "main": "index.js",
+  "author": "hanseve",
+  "private": true,
+  "license": "BSD",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "vue": "^2.6.11"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "css-loader": "^3.4.1",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

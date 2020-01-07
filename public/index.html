@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue.js Socket.IO Chat Example</title>
+</head>
+<body>
+<ul class="pages" id="chat" @click=inputFocus @keydown="listenKeys">
+    <chat-page ref="chatInput" v-show="showChat" :messages="messages" v-model.trim="typingMessage"></chat-page>
+    <transition name="slide-fade">
+        <login-page ref="usernameInput" v-show="showLogin" v-model.trim="username"></login-page>
+    </transition>
+</ul>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
